@@ -16,7 +16,7 @@ const Header = () => {
                 <li><a href="#contact" onclick="closemenu()">Contact</a></li>
                 <i className="fa-sharp fa-solid fa-circle-xmark close-icon" onclick="closemenu()"></i>
             </ul>
-            {/* <i className="fa-solid fa-bars menu-icon" onclick="openmenu()"></i> */}
+            <i className="fa-solid fa-bars menu-icon" onclick="openmenu()"></i>
         </nav>
 
         <div className="header_text">

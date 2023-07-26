@@ -1,0 +1,100 @@
+
+#portfolio{
+    padding: 50px 0;
+
+    .container{
+        padding: 10px 10%;
+
+        h1{
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        .work-list{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+            gap: 40px;
+            margin-top: 50px;
+
+            .work{
+                border-radius: 10px;
+                position: relative;
+                overflow: hidden;
+                height: 450px;
+                /* height: 64vh; */
+
+                &:hover{
+                    img{
+                        transform: scale(1.1);
+                    }
+
+                    .layer{
+                        height: 100%;
+                    }
+                }
+
+                img{
+                    border-radius: 10px;
+                    width: 100%;
+                    display: block;
+                    transition: 0.5s;
+                }
+
+                .layer{
+                    /* background: linear-gradient(rgba(0,0,0,0.6),#ff004f); */
+                    background: linear-gradient(rgba(0, 0, 0, 0.458),#ff0051);
+                    color: #fff;
+                    border-radius: 10px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    padding: 0 40px;
+                    width: 100%;
+                    height: 0;
+                    justify-content: center;
+                    overflow: hidden;
+                    font-size: 14px;
+                    transition: height 0.5s;
+
+                    h2{
+                        font-weight: 500;
+                        margin-bottom: 20px;
+                    }
+
+                    a{
+                        text-decoration: none;
+                        margin-top: 20px;
+                        background-color: #fff;
+                        color: #ff004f;
+                        height: 60px;
+                        width: 60px;
+                        border-radius: 50%;
+                        text-align: center;
+                        line-height: 60px;
+                    }
+                }
+            }
+        }
+
+        .btn{
+            display: block;
+            margin: 50px auto;
+            border: 1.6px solid #ff004f;
+            width: fit-content;
+            text-decoration: none;
+            padding: 14px 50px;
+            border-radius: 6px;
+            color: #000;
+            transition: background-color 0.3s;
+
+            &:hover{
+                background-color: #ff004f;
+                color: #fff;
+            }
+        }
+    }
+}

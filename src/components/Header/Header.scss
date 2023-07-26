@@ -32,6 +32,10 @@
                 display: flex;
                 gap: 50px;
 
+                .close-icon{
+                    display: none;
+                }
+
                 li{
                     list-style: none;
                     display: inline-block;
@@ -59,6 +63,10 @@
                         }
                     }
                 }
+            }
+
+            .menu-icon{
+                display: none;
             }
         }
 
