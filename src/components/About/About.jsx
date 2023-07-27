@@ -1,8 +1,16 @@
 import React from 'react'
 import "./About.scss"
 import AboutImg from "../../assets/about.png"
+import { useState } from 'react'
 
 const About = () => {
+    const [activeTab, setActiveTab] = useState("skills");
+    const [activeLink, setActiveLink] = useState("skills");
+
+    const openTab =(tabName)=>{
+        setActiveLink(tabName);
+        setActiveTab(tabName);
+    }
   return (
     <div id="about">
     <div className="container">
@@ -15,12 +23,12 @@ const About = () => {
                 <div><img src={AboutImg} alt="" className="mobile-about-img"/></div>
             
                 <div className="about-titles">
-                    <p className="about-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p className="about-links" onclick="opentab('experience')">Experience</p>
-                    <p className="about-links" onclick="opentab('education')">Education</p>
+                    <p className={`about-links ${activeLink==="skills" ? "active-link" : ""}`} onClick={()=> openTab("skills")}>Skills</p>
+                    <p className={`about-links ${activeLink==="experience" ? "active-link" : ""}`} onClick={()=> openTab("experience")}>Experience</p>
+                    <p className={`about-links ${activeLink==="education" ? "active-link" : ""}`} onClick={()=> openTab("education")}>Education</p>
                 </div>
 
-                <div className="about-tab-contents active-tab" id="skills">
+                <div className={`about-tab-contents ${activeTab==="skills" ? "active-tab" : ""}`} id="skills">
                     <ul>
                         <li><span>HTML</span><br/>Knowledge ----------- 80%</li>
                         <li><span>CSS</span><br/>Knowledge ----------- 70%</li>
@@ -28,7 +36,7 @@ const About = () => {
                     </ul>
                 </div>
 
-                <div className="about-tab-contents" id="experience">
+                <div className={`about-tab-contents ${activeTab==="experience" ? "active-tab" : ""}`} id="experience">
                     <ul>
                         <li><span>2023 - Current</span><br/>Assistant QA Engineer (DishHome)</li>
                         <li><span>2022</span><br/>Project on CNC Engraving Machine</li>
@@ -36,7 +44,7 @@ const About = () => {
                     </ul>
                 </div>
 
-                <div className="about-tab-contents" id="education">
+                <div className={`about-tab-contents ${activeTab==="education" ? "active-tab" : ""}`} id="education">
                     <ul>
                         <li><span>2017 - 2022</span><br/>B.E. Electronics & Communication | Tribhuwan University</li>
                         <li><span>2015 - 2017</span><br/>Intermediate | Morning Glory Higher Secondary School</li>

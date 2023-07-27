@@ -1,4 +1,4 @@
-
+@import "../../css-config/mixins.scss";
 
 #contact{
     .container{
@@ -11,6 +11,9 @@
 
             .contact-left{
                 flex-basis: 35%;
+                @include mobile{
+                    flex-basis: 100%;
+                }
 
                 h1{
                     font-size:40px;
@@ -47,6 +50,9 @@
 
             .contact-right{
                 flex-basis: 60%;
+                @include mobile{
+                    flex-basis: 100%;
+                }
 
                 form{
                     width: 100%;
@@ -86,6 +92,10 @@
     border-radius: 6px;
     color: #000;
     transition: background-color 0.3s;
+    @include mobile{
+        background-color: #ff004f;
+        color: #fff;
+    }
 
     &:hover{
         background-color: #ff004f;

@@ -1,3 +1,4 @@
+@import "../../css-config/mixins.scss";
 
 .footer{
     width: 100%;
@@ -7,6 +8,9 @@
     margin-top: 20px;
     /* background-color: #cec4c4; */
     background-color: #e1d6e0;
+    @include mobile{
+        font-size: 14px;
+    }
 
     i{
         color: #ff004f;
