@@ -18,8 +18,8 @@ const About = () => {
             <div className="about-col-1"><img src={AboutImg} alt="" className="about-img"/></div>
             <div className="about-col-2">
                 <h1 className="sub-title">About Me</h1>
-                <p>Meet Vivek, a passionate and creative Frontend Developer who believes that coding is not just about writing lines of code, but it's an art that requires creativity, passion, logic and innovation. With a great understanding of HTML, CSS, Javascript, and React JS, Vivek has been creating visually appealing and user-friendly web applications that not only impress but solve real-life problems. His focus on clean code and attention to detail ensures that his projects are of the highest quality. As a coding artist, he takes pride in his work and goes beyond the designs to deliver innovative solutions. His dedication to his craft and love for problem-solving make him a valuable asset to any project.</p>
-
+                <p>Hi, I am a passionate and creative Frontend Developer who believes that coding is not just about writing lines of code, but it's an art that requires creativity, passion, logic, learning mindset and most important, the debugging skills. I have a good knowledge and Hands on Experience of Html, CSS, SCSS, JavaScript (ES6), React JS, Git, GitHub, and Linux. I also possess a Good knowledge of Cybersecurity, secure code practices, standard ESlint guides, and I also have a nice grasp on Computer Networks. Besides, I always focus on clean, optimized, maintainable and well documented code with good aesthetic designs.</p>
+                
                 <div><img src={AboutImg} alt="" className="mobile-about-img"/></div>
             
                 <div className="about-titles">

@@ -13,7 +13,7 @@
 
         .work-list{
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 40px;
             margin-top: 50px;
 
@@ -67,6 +67,30 @@
                     height: 100%;
                     @include mobile{
                         // height: 100%;
+                    }
+
+                    &.bg1{
+                        background: linear-gradient(145deg,rgba(0, 0, 0, 0.6),#e01392);
+                    }
+
+                    &.bg2{
+                        background: linear-gradient(145deg,rgba(0, 0, 0, 0.6),#05eb61);
+                    }
+
+                    &.bg3{
+                        background: linear-gradient(145deg,rgba(0, 0, 0, 0.6),#7709ed);
+                    }
+
+                    &.bg4{
+                        background: linear-gradient(145deg,rgba(14, 91, 126, 0.6),#0739ef);
+                    }
+
+                    &.bg5{
+                        background: linear-gradient(145deg,rgba(0, 0, 0, 0.6),#00e3f8);
+                    }
+
+                    &.bg6{
+                        background: linear-gradient(145deg,rgba(239, 23, 23, 0.6),#8000f8);
                     }
 
                     h2{
