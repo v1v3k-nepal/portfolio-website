@@ -43,6 +43,9 @@
 
                 p{
                     text-align: justify;
+                    @include mobile{
+                        font-size: 16px;
+                    }
                 }
 
                 .mobile-about-img{
