@@ -5,6 +5,8 @@ import work2 from "../../assets/work-2.png"
 import work3 from "../../assets/work-3.png"
 
 const Projects = () => {
+
+
   return (
     <div id="portfolio">
     <div className="container">
@@ -38,7 +40,7 @@ const Projects = () => {
             </div>
         </div>
 
-        <a href="https:viveknepal.com.np" className="btn">See More</a>
+        {/* <a href="https:viveknepal.com.np" className="btn">See More</a> */}
     </div>
     </div>
   )
