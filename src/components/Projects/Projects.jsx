@@ -6,7 +6,17 @@ import work3 from "../../assets/work-3.png"
 import IPTV from "../../assets/DishHome-IPTV-Remote.apk"
 import DTH from "../../assets/DishHome-DTH-Remote.apk"
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Projects = () => {
+
+    const notify = ()=>{
+        toast.info("Sorry, this Repo is currently private");
+    }
+
+    // const IptvGithub = "https://github.com/v1v3k-nepal/DishHome-IPTV-Remote";
+    // const dthGithub = "https://github.com/v1v3k-nepal/DishHome-DTH-Remote";
 
 
   return (
@@ -70,7 +80,7 @@ const Projects = () => {
                     <p>It's an Android IR Remote App for DishHome IPTV. I have coded it's UI entirely in HTML, CSS & JS, & used Java for the Backend.</p>
                     <div className='btn-container'>
                         <a href={IPTV} className="live">Live</a>
-                        <a href='https://github.com/v1v3k-nepal/DishHome-IPTV-Remote' className="github">GitHub</a>
+                        <a href="#portfolio" onClick={()=> notify()} className="github">GitHub</a>
                     </div>
                 </div>
             </div>
@@ -81,13 +91,13 @@ const Projects = () => {
                     <h2>DishHome DTH Remote <br/> Android App</h2>
                     <p>It's an Android IR Remote App for DishHome DTH. I have coded it's UI entirely in HTML, CSS & JS, & used Java for the Backend</p>
                     <div className='btn-container'>
-                        <a href={DTH} className="live">Live</a>
-                        <a href='https://github.com/v1v3k-nepal/DishHome-DTH-Remote' className="github">GitHub</a>
+                        <a href={DTH} onClick={()=> notify()} className="live">Live</a>
+                        <a href="#portfolio" onClick={()=> notify()} className="github">GitHub</a>
                     </div>
                     {/* <a href="#header"><i className="fa-solid fa-up-right-from-square"></i></a> */}
                 </div>
             </div>
-
+            <ToastContainer/>
         </div>
     </div>
     </div>
