@@ -31,8 +31,8 @@ const Projects = () => {
                     <h2>E-Commerce App</h2>
                     <p>Fully Functional React E-commerce web App that uses API from Strapi Headless CMS, to fetch product data from the backend.</p>
                     <div className='btn-container'>
-                        <a href="https://v1v3k-nepal.github.io/hellostore-frontend/" className="live">Live</a>
-                        <a href='https://github.com/v1v3k-nepal/hellostore-frontend' className="github">GitHub</a>
+                        <a href="https://v1v3k-nepal.github.io/hellostore/" className="live">Live</a>
+                        <a href='https://github.com/v1v3k-nepal/hellostore' className="github">GitHub</a>
                     </div>
                 </div>
             </div>
