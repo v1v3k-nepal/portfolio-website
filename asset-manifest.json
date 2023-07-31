@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1f2219e6.css",
-    "main.js": "/static/js/main.2ffd58c1.js",
+    "main.js": "/static/js/main.82444f9b.js",
     "static/media/DishHome-IPTV-Remote.apk": "/static/media/DishHome-IPTV-Remote.97f1c3d0348f94ebcf9e.apk",
     "static/media/DishHome-DTH-Remote.apk": "/static/media/DishHome-DTH-Remote.ee590d18173e7fbcfecc.apk",
     "static/media/about.png": "/static/media/about.2f168679aa734e177540.png",
@@ -12,10 +12,10 @@
     "static/media/v4.3.0.png": "/static/media/v4.3.0.6ca16833c51e773c8c81.png",
     "index.html": "/index.html",
     "main.1f2219e6.css.map": "/static/css/main.1f2219e6.css.map",
-    "main.2ffd58c1.js.map": "/static/js/main.2ffd58c1.js.map"
+    "main.82444f9b.js.map": "/static/js/main.82444f9b.js.map"
   },
   "entrypoints": [
     "static/css/main.1f2219e6.css",
-    "static/js/main.2ffd58c1.js"
+    "static/js/main.82444f9b.js"
   ]
 }
