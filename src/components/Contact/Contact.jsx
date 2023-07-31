@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Contact.scss"
+import Resume from "../../assets/Resume-Vivek-Nepal.pdf"
 
 const Contact = () => {
   return (
@@ -18,7 +19,7 @@ const Contact = () => {
                     <a href="https://www.youtube.com/@ILoveElectronics3000/"><i className="fa-brands fa-youtube"></i></a>
                 </div>
 
-                <a href="https://viveknepal.com.np" className="btn btn2">Download CV</a>
+                <a href={Resume} className="btn btn2">Download CV</a>
             </div>
             <div className="contact-right">
                 <form name="submit-to-google-sheet">
