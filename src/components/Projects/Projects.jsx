@@ -3,13 +3,15 @@ import "./Projects.scss"
 import work1 from "../../assets/work-1.png"
 import work2 from "../../assets/work-2.png"
 import work3 from "../../assets/work-3.png"
-import IPTV from "../../assets/DishHome-IPTV-Remote.apk"
-import DTH from "../../assets/DishHome-DTH-Remote.apk"
+// import IPTV from "../../assets/DishHome-IPTV-Remote.apk"
+// import DTH from "../../assets/DishHome-DTH-Remote.apk"
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Projects = () => {
+    const IPTV = "https://play.google.com/store/apps/details?id=com.vivek.dhitvremote";
+    const DTH = "https://play.google.com/store/apps/details?id=com.vivek.dishhomedthremote";
 
     const notify = ()=>{
         toast.info("Sorry, this Repo is currently private");
