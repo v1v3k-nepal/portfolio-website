@@ -22,7 +22,7 @@ const Contact = () => {
                 <a href={Resume} className="btn btn2">Download CV</a>
             </div>
             <div className="contact-right">
-                <form name="submit-to-google-sheet">
+                <form action='https://formspree.io/f/xnqkpbjn' name="contact-inputs" method="POST">
                     <input type="text" name="Name" placeholder="Your Name" required/>
                     <input type="email" name="Email" placeholder="Your Email" required/>
                     <textarea name="Message" rows="10" placeholder="Your Message" required></textarea>
