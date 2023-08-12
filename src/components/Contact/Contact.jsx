@@ -9,7 +9,7 @@ const Contact = () => {
         <div className="row">
             <div className="contact-left">
                 <h1 className="sub-title">Contact Me</h1>
-                <p><i className="fa-solid fa-paper-plane"></i>vivek074bex@ioepc.edu.np</p>
+                <p><i className="fa-solid fa-paper-plane"></i>contact@viveknepal.com.np</p>
                 <p><i className="fa-brands fa-whatsapp"></i>98xxxxxxxx</p>
                 <div className="social-icons">
                     <a href="https://www.linkedin.com/in/vivek-nepal/"><i className="fa-brands fa-linkedin"></i></a>
