@@ -4,8 +4,8 @@ import AboutImg from "../../assets/about.png"
 import { useState } from 'react'
 
 const About = () => {
-    const [activeTab, setActiveTab] = useState("certification");
-    const [activeLink, setActiveLink] = useState("certification");
+    const [activeTab, setActiveTab] = useState("skills");
+    const [activeLink, setActiveLink] = useState("skills");
 
     const openTab =(tabName)=>{
         setActiveLink(tabName);
@@ -32,7 +32,7 @@ const About = () => {
             <div className="about-col-1"><img src={AboutImg} alt="" className="about-img"/></div>
             <div className="about-col-2">
                 <h1 className="sub-title">About Me</h1>
-                <p>Hi, I am a passionate and creative Frontend Developer who believes that coding is not just about writing lines of code, but it's an art that requires creativity, passion, logic, learning mindset and most important, the debugging skills. I have a good knowledge and Hands on Experience of Html, CSS, SCSS, JavaScript (ES6), React JS, Git, GitHub, and Linux. I also possess a Good knowledge of Cybersecurity, secure code practices, standard ESlint guides, and I also have a nice grasp on Computer Networks. Besides, I always focus on clean, optimized, maintainable and well documented code with good aesthetic designs.</p>
+                <p>Hi, I am a passionate and creative Frontend Developer who believes that coding is not just about writing lines of code, but it's an art that requires creativity, passion, logic, learning mindset and most important, the debugging skills. I have a good knowledge and Hands on Experience of Frontend Development with the following skills. I also possess a Good knowledge of Cybersecurity, secure code practices, standard ESlint guides, and I also have a nice grasp on Computer Networks. Besides, I always focus on clean, optimized, maintainable and well documented code with good aesthetic designs.</p>
                 
                 <div><img src={AboutImg} alt="" className="mobile-about-img"/></div>
             
@@ -44,9 +44,10 @@ const About = () => {
 
                 <div className={`about-tab-contents ${activeTab==="skills" ? "active-tab" : ""}`} id="skills">
                     <ul>
-                        <li><span>HTML</span><br/>Knowledge ----------- 80%</li>
-                        <li><span>CSS</span><br/>Knowledge ----------- 75%</li>
-                        <li><span>JS & React Js</span><br/>Knowledge ----------- 70%</li>
+                        <li><span>Languages</span><br/>HTML5, CSS3, JavaScript(ES6), Java(Basic)</li>
+                        <li><span>Framework/Library</span><br/>React JS, Next JS, Tailwind CSS</li>
+                        <li><span>Essentials</span><br/>Agile Metholodogy, API Testing</li>
+                        <li><span>Tools</span><br/>Git, GitHub, PostMan, VS-Code, Android Studio</li>
                     </ul>
                 </div>
 
