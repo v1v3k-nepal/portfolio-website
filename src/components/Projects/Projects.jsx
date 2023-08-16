@@ -41,9 +41,21 @@ const Projects = () => {
 
             <div className="work">
                 <img src={work2} alt=""/>
+                <div className="layer bg3">
+                    <h2>Agency WebApp</h2>
+                    <p>Next Js Project based on Tailwind CSS, MongoDB for the Agency Portfolio with Features: Authentication, Blogs, CRUD Operations</p>
+                    <div className='btn-container'>
+                        <a href="https://v1v3k-nepal.github.io/agency-webapp/" className="live">Live</a>
+                        <a href="https://github.com/v1v3k-nepal/agency-webapp" className="github">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div className="work">
+                <img src={work2} alt=""/>
                 <div className="layer bg2">
                     <h2>Contact App</h2>
-                    <p>This is Completely Responsive React App which lets you to Add, Update, Delete, Search & Favourite your Contacts.</p>
+                    <p>This is Completely Responsive React App which lets you to Add, Update, Delete, & Toggle your Favourite Contacts along with live search</p>
                     <div className='btn-container'>
                         <a href="https://v1v3k-nepal.github.io/contact-app" className="live">Live</a>
                         <a href='https://github.com/v1v3k-nepal/contact-app' className="github">GitHub</a>
