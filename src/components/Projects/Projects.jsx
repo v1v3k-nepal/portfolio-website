@@ -45,7 +45,7 @@ const Projects = () => {
                     <h2>Agency WebApp</h2>
                     <p>Next Js Project based on Tailwind CSS, MongoDB for the Agency Portfolio with Features: Authentication, Blogs, CRUD Operations</p>
                     <div className='btn-container'>
-                        <a href="https://v1v3k-nepal.github.io/agency-webapp/" className="live">Live</a>
+                        <a href="https://agency-webapp.vercel.app/" className="live">Live</a>
                         <a href="https://github.com/v1v3k-nepal/agency-webapp" className="github">GitHub</a>
                     </div>
                 </div>
