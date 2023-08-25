@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.1f2219e6.css",
-    "main.js": "/static/js/main.0eda5d0b.js",
+    "main.js": "/static/js/main.e76ec516.js",
     "static/media/about.png": "/static/media/about.2f168679aa734e177540.png",
     "static/media/phone-image.png": "/static/media/phone-image.4ca687c126eb5df41640.png",
     "static/media/work-1.png": "/static/media/work-1.9d70c2239b9cefe78a18.png",
     "static/media/work-2.png": "/static/media/work-2.893b3d33cde47ed0012c.png",
     "static/media/work-3.png": "/static/media/work-3.de1df78bf5ca74ec3063.png",
     "static/media/v4.3.0.png": "/static/media/v4.3.0.6ca16833c51e773c8c81.png",
-    "static/media/Resume-Vivek-Nepal-Aug25.pdf": "/static/media/Resume-Vivek-Nepal-Aug25.6062373885c30b226e29.pdf",
+    "static/media/Resume-Vivek-Nepal-Aug26.pdf": "/static/media/Resume-Vivek-Nepal-Aug26.fe41f118facd5a860584.pdf",
     "index.html": "/index.html",
     "main.1f2219e6.css.map": "/static/css/main.1f2219e6.css.map",
-    "main.0eda5d0b.js.map": "/static/js/main.0eda5d0b.js.map"
+    "main.e76ec516.js.map": "/static/js/main.e76ec516.js.map"
   },
   "entrypoints": [
     "static/css/main.1f2219e6.css",
-    "static/js/main.0eda5d0b.js"
+    "static/js/main.e76ec516.js"
   ]
 }
