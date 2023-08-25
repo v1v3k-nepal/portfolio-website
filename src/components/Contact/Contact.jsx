@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Contact.scss"
-import Resume from "../../assets/Resume-Vivek-Nepal-v2.pdf"
+import Resume from "../../assets/Resume-Vivek-Nepal-Aug25.pdf"
 
 const Contact = () => {
   return (
