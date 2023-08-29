@@ -106,3 +106,24 @@
         display: inline-block;
     }
 }
+
+.disable-btn{
+    background-color: #c1bfbf;
+    color: #efeeee;
+    border: none;
+    &:hover{
+        background-color: #dfdede;
+    }
+}
+
+.enable-btn{
+    border: 1.6px solid #ff004f;
+    &:hover{
+        background-color: #ff004f;
+        color: #fff;
+    }
+    @include mobile{
+        background-color: #ff004f;
+        color: #fff;
+    }
+}
