@@ -28,6 +28,18 @@ const Projects = () => {
         <div className="work-list">
 
             <div className="work">
+                <img src={work2} alt=""/>
+                <div className="layer bg4">
+                    <h2>Dream Market</h2>
+                    <p>Completely Responsive Next JS and Tailwind CSS based E-Commerce webApp with Khalti Payment Gateway Integration. FakeStore API is Used.</p>
+                    <div className='btn-container'>
+                        <a href="https://your-dream-market.vercel.app/" className="live">Live</a>
+                        <a href='https://github.com/v1v3k-nepal/Dream-Market' className="github">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div className="work">
                 <img src={work1} alt=""/>
                 <div className="layer bg6">
                     <h2>E-Commerce App</h2>
@@ -105,7 +117,7 @@ const Projects = () => {
                     <h2>DishHome DTH Remote <br/> Android App</h2>
                     <p>It's an Android IR Remote App for DishHome DTH. I have coded it's UI entirely in HTML, CSS & JS, & used Java for the Backend</p>
                     <div className='btn-container'>
-                        <a href={DTH} onClick={()=> notify()} className="live">Live</a>
+                        <a href={DTH} className="live">Live</a>
                         <a href="#portfolio" onClick={()=> notify()} className="github">GitHub</a>
                     </div>
                     {/* <a href="#header"><i className="fa-solid fa-up-right-from-square"></i></a> */}
