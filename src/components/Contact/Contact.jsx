@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Contact.scss";
-import Resume from "../../assets/Resume-Vivek-Nepal-Aug26.pdf";
+import Resume from "../../assets/Resume-Vivek-Nepal-Sept8-1447.pdf";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
