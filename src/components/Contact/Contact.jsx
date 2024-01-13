@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Contact.scss";
-import Resume from "../../assets/Resume-Vivek-Nepal-Sept13-1201.pdf";
+import Resume from "../../assets/Resume-Vivek-Nepal-Jan-13.pdf";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
@@ -8,7 +8,7 @@ const Contact = () => {
 
   const onChange = (value) => {
     // console.log("Captcha value:", value);
-    if(value) setCaptchaVerified(true)
+    if (value) setCaptchaVerified(true);
   };
   return (
     <div id="contact">
@@ -17,7 +17,8 @@ const Contact = () => {
           <div className="contact-left">
             <h1 className="sub-title">Contact Me</h1>
             <p>
-              <i className="fa-solid fa-paper-plane"></i>contact@viveknepal.com.np
+              <i className="fa-solid fa-paper-plane"></i>
+              contact@viveknepal.com.np
             </p>
             <p>
               <i className="fa-brands fa-whatsapp"></i>98xxxxxxxx
@@ -45,12 +46,39 @@ const Contact = () => {
             </a>
           </div>
           <div className="contact-right">
-            <form action="https://formspree.io/f/xnqkpbjn" name="contact-inputs" method="POST">
+            <form
+              action="https://formspree.io/f/xnqkpbjn"
+              name="contact-inputs"
+              method="POST"
+            >
               <input type="text" name="Name" placeholder="Your Name" required />
-              <input type="email" name="Email" placeholder="Your Email" required />
-              <textarea name="Message" rows="10" placeholder="Your Message" required></textarea>
-              {!captchaVerified && <ReCAPTCHA sitekey="6LdroOMnAAAAAEmBCRI95eRc7wadCoJlgbRaIYlz" onChange={onChange} />}
-              <button type="submit" className={`btn btn2 ${captchaVerified? "enable-btn": "disable-btn"}`} disabled={!captchaVerified}>Submit</button>
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="10"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              {!captchaVerified && (
+                <ReCAPTCHA
+                  sitekey="6LdroOMnAAAAAEmBCRI95eRc7wadCoJlgbRaIYlz"
+                  onChange={onChange}
+                />
+              )}
+              <button
+                type="submit"
+                className={`btn btn2 ${
+                  captchaVerified ? "enable-btn" : "disable-btn"
+                }`}
+                disabled={!captchaVerified}
+              >
+                Submit
+              </button>
             </form>
 
             <span id="msg"></span>
