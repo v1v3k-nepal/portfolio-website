@@ -28,10 +28,20 @@ const ProjectCard = ({ data }) => {
             ))}
           </div>
           <div className="project-card-layer--bottom-content--btn-container">
-            <a href={data?.liveUrl} className="live">
+            <a
+              href={data?.liveUrl}
+              className="live"
+              target="_blank"
+              rel="noreferrer"
+            >
               Live
             </a>
-            <a href={data?.githubUrl} className="github">
+            <a
+              href={data?.githubUrl}
+              className="github"
+              target="_blank"
+              rel="noreferrer"
+            >
               GitHub
             </a>
           </div>
