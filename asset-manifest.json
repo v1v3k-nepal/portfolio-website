@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.e426540b.css",
-    "main.js": "/static/js/main.70d28b61.js",
+    "main.js": "/static/js/main.d148ddb8.js",
     "static/media/about.png": "/static/media/about.2f168679aa734e177540.png",
     "static/media/phone-image.png": "/static/media/phone-image.4ca687c126eb5df41640.png",
     "static/media/v4.3.0.png": "/static/media/v4.3.0.6ca16833c51e773c8c81.png",
     "static/media/Resume-Vivek-Nepal-Jan-13.pdf": "/static/media/Resume-Vivek-Nepal-Jan-13.539b8d9cb7c6f84bea74.pdf",
     "index.html": "/index.html",
     "main.e426540b.css.map": "/static/css/main.e426540b.css.map",
-    "main.70d28b61.js.map": "/static/js/main.70d28b61.js.map"
+    "main.d148ddb8.js.map": "/static/js/main.d148ddb8.js.map"
   },
   "entrypoints": [
     "static/css/main.e426540b.css",
-    "static/js/main.70d28b61.js"
+    "static/js/main.d148ddb8.js"
   ]
 }
