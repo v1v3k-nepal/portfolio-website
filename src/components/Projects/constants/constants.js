@@ -5,7 +5,8 @@ export const projectData = [
     desc: "- Sidebar, Navbar, users page, products page, CRUD Ops for User/Products<br/>- Reusable Table component with Pagination, Serverless API<br/>- Authentication, Loading Skeleton, Cloud MongoDB Database, Recap Chart<br/>- Technology : Next Js, Typescript, Next-Auth, Framer Motion, SASS",
     liveUrl: "https://admin-dashboard-as5b.vercel.app/",
     githubUrl: "https://github.com/v1v3k-nepal/admin-dashboard",
-    bgImg: "/assets/projects/work-1.png",
+    bgImg: "/assets/projects/admin-dashboard.png",
+    techUsed: ["Next Js", "Typescript", "Next-Auth", "Framer Motion", "SASS"],
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ export const projectData = [
     liveUrl: "https://your-dream-market.vercel.app/",
     githubUrl: "https://github.com/v1v3k-nepal/Dream-Market",
     bgImg: "/assets/projects/work-2.png",
+    techUsed: ["Next JS", "Tailwind CSS", "Redux-toolkit", "Yup", "Formik"],
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ export const projectData = [
     liveUrl: "https://agency-webapp.vercel.app/",
     githubUrl: "https://github.com/v1v3k-nepal/agency-webapp",
     bgImg: "/assets/projects/work-3.png",
+    techUsed: ["Next JS", "Tailwind CSS", "MongoDB(Cloud)", "Next-Auth"],
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ export const projectData = [
     liveUrl: "https://yipl-frontend-challenge-vivek.vercel.app/",
     githubUrl: "https://github.com/v1v3k-nepal/catalog-webapp-yipl",
     bgImg: "/assets/projects/work-1.png",
+    techUsed: [" Next Js", "Javascript", "SASS"],
   },
   {
     id: 5,
@@ -38,14 +42,16 @@ export const projectData = [
     liveUrl: "https://v1v3k-nepal.github.io/contact-app",
     githubUrl: "https://github.com/v1v3k-nepal/contact-app",
     bgImg: "/assets/projects/work-2.png",
+    techUsed: ["React", "Javascript", "HTML", "CSS"],
   },
   {
-    id: 5,
+    id: 6,
     title: "Todos List",
     desc: "- user can add, update and delete todos,<br/> -feature to mark as completed",
     liveUrl: "https://v1v3k-nepal.github.io/todos-list/",
     githubUrl: "https://github.com/v1v3k-nepal/todos-list",
     bgImg: "/assets/projects/work-3.png",
+    techUsed: ["React", "Javascript", "HTML", "CSS"],
   },
   {
     id: 7,
@@ -54,6 +60,7 @@ export const projectData = [
     liveUrl: "https://v1v3k-nepal.github.io/weather-app",
     githubUrl: "https://github.com/v1v3k-nepal/Dream-Market",
     bgImg: "/assets/projects/work-1.png",
+    techUsed: ["HTML", "CSS", "Javascript"],
   },
   {
     id: 8,
@@ -63,6 +70,7 @@ export const projectData = [
       "https://play.google.com/store/apps/details?id=com.vivek.dishhomedthremote",
     githubUrl: "https://github.com/v1v3k-nepal/DishHome-DTH-Remote",
     bgImg: "/assets/projects/work-2.png",
+    techUsed: ["HTML", "CSS", "Javascript", "Java"],
   },
   {
     id: 9,
@@ -72,5 +80,6 @@ export const projectData = [
       "https://play.google.com/store/apps/details?id=com.vivek.dhitvremote",
     githubUrl: "https://github.com/v1v3k-nepal/DishHome-IPTV-Remote",
     bgImg: "/assets/projects/work-3.png",
+    techUsed: ["HTML", "CSS", "Javascript", "Java"],
   },
 ];

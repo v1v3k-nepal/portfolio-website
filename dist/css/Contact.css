@@ -1,0 +1,119 @@
+#contact .container {
+  padding: 10px var(--paddingX);
+}
+#contact .container .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#contact .container .row .contact-left {
+  flex-basis: 35%;
+}
+@media only screen and (max-width: 768px) {
+  #contact .container .row .contact-left {
+    flex-basis: 100%;
+  }
+}
+#contact .container .row .contact-left h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+#contact .container .row .contact-left p {
+  margin-top: 30px;
+}
+#contact .container .row .contact-left p i {
+  margin-right: 15px;
+  font-size: 22px;
+  color: #ff004f;
+}
+#contact .container .row .contact-left .social-icons {
+  margin-top: 30px;
+}
+#contact .container .row .contact-left .social-icons a {
+  margin-right: 15px;
+  font-size: 25px;
+  display: inline-block;
+  color: #1d1c1c;
+  transition: 0.5s;
+}
+#contact .container .row .contact-left .social-icons a:hover {
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+#contact .container .row .contact-right {
+  flex-basis: 60%;
+}
+@media only screen and (max-width: 768px) {
+  #contact .container .row .contact-right {
+    flex-basis: 100%;
+  }
+}
+#contact .container .row .contact-right form {
+  width: 100%;
+}
+#contact .container .row .contact-right form .recaptcha {
+  margin-top: 20px;
+}
+#contact .container .row .contact-right form input,
+#contact .container .row .contact-right form textarea {
+  width: 100%;
+  border-radius: 6px;
+  margin: 10px 0;
+  padding: 15px;
+  font-size: 18px;
+  outline: none;
+  border: 0;
+  background: var(--cardBgColor);
+}
+#contact .container .row .contact-right form .btn2 {
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.btn {
+  display: block;
+  margin: 50px auto;
+  border: 1.6px solid #ff004f;
+  width: fit-content;
+  text-decoration: none;
+  padding: 14px 50px;
+  border-radius: 6px;
+  color: #000;
+  transition: background-color 0.3s;
+}
+@media only screen and (max-width: 768px) {
+  .btn {
+    background-color: #ff004f;
+    color: #fff;
+  }
+}
+.btn:hover {
+  background-color: #ff004f;
+  color: #fff;
+}
+.btn.btn2 {
+  display: inline-block;
+}
+
+.disable-btn {
+  background-color: #c1bfbf;
+  color: #efeeee;
+  border: none;
+}
+.disable-btn:hover {
+  background-color: #dfdede;
+}
+
+.enable-btn {
+  border: 1.6px solid #ff004f;
+  background-color: #ff004f;
+  color: #fff;
+}
+@media only screen and (max-width: 768px) {
+  .enable-btn {
+    background-color: #ff004f;
+    color: #fff;
+  }
+}/*# sourceMappingURL=Contact.css.map */

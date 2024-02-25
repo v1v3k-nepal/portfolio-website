@@ -1,160 +1,160 @@
 @import "../../css-config/mixins.scss";
 
-#header{
-    width: 100%;
-    height: 100vh;
-    background-size:cover;
-    background-position: center;
-    background-image: url(../../assets/v4.3.0.png);
-    @include mobile{
-        background-image: url(../../assets/phone-image.png);
+#header {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../../assets/v4.3.0.png);
+  @include mobile {
+    background-image: url(../../assets/phone-image.png);
+  }
+
+  .container {
+    padding: 10px var(--paddingX);
+
+    &.overlay {
+      @include mobile {
+        height: 100%;
+        width: 100%;
+        /* background: linear-gradient(-160deg,#c9447c24, #964e4e29,#5f02ffd7); */
+        background: linear-gradient(-135deg, #c9447c24, #82464629, #5f02ffd7);
+        border-radius: 0 0 10px 10px;
+      }
     }
 
-    .container{
-        padding: 10px 10%;
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 10px 0;
 
-        &.overlay{
-            @include mobile{
-                height: 100%;
-                width: 100%;
-                /* background: linear-gradient(-160deg,#c9447c24, #964e4e29,#5f02ffd7); */
-                background: linear-gradient(-135deg,#c9447c24, #82464629,#5f02ffd7);
-                border-radius: 0 0 10px 10px;
-            }
+      .nav_logo {
+        color: #000000;
+        font-size: 3rem;
+        font-weight: bold;
+        font-family: "Times New Roman", Times, serif;
+        cursor: pointer;
+        @include mobile {
+          font-size: 30px;
         }
 
-        .nav{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            padding: 10px 0;
+        span {
+          color: rgb(224, 27, 100);
+          font-family: "Times New Roman", Times, serif;
+        }
+      }
 
-            .nav_logo{
-                color: #000000;
-                font-size: 3rem;
-                font-weight: bold;
-                font-family: 'Times New Roman', Times, serif;
-                cursor: pointer;
-                @include mobile{
-                    font-size: 30px;
-                }
-
-                span{
-                    color: rgb(224, 27, 100);
-                    font-family: 'Times New Roman', Times, serif;
-                }
-            }
-
-            ul{
-                display: flex;
-                gap: 50px;
-                @include mobile{
-                    flex-direction: column;
-                    gap: 0px;
-                    background: linear-gradient(145deg,rgba(0, 0, 0, 0.078),#ff009995); 
-                    color: #fff;
-                    position: fixed;
-                    top: 0;
-                    right:-250px;
-                    width: 200px;
-                    height: 100vh;
-                    padding-top: 50px;
-                    transition: right 0.5s;
-                    z-index: 2;
-                }
-
-                .close-icon{
-                    display: none;
-                    @include mobile{
-                        display: block;
-                        font-size: 25px;
-                        position: absolute;
-                        top: 25px;
-                        left: 25px;
-                        cursor: pointer;
-                    }
-                }
-
-                li{
-                    list-style: none;
-                    display: inline-block;
-                    @include mobile{
-                        display: block;
-                        margin: 25px;
-                    }
-
-                    a{
-                        text-decoration: none;
-                        font-size: 1.25rem;
-                        font-weight: 500;
-                        color: #212121;
-                        position: relative;
-                        @include mobile{
-                            color:#fff;
-                        }
-
-                        &:after{
-                            content: '';
-                            width: 0%;
-                            height: 3px;
-                            background: #ff004f;
-                            position: absolute;
-                            left: 0;
-                            bottom: -6px;
-                            transition: 0.3s;
-                        }
-
-                        &:hover::after, &:active::after{
-                            width: 100%;
-                        }
-                    }
-                }
-            }
-
-            .menu-icon{
-                display: none;
-                cursor: pointer;
-                @include mobile{
-                    display: block;
-                    font-size: 25px;
-                }
-            }
+      ul {
+        display: flex;
+        gap: 50px;
+        @include mobile {
+          flex-direction: column;
+          gap: 0px;
+          background: linear-gradient(145deg, rgba(0, 0, 0, 0.078), #ff009995);
+          color: #fff;
+          position: fixed;
+          top: 0;
+          right: -250px;
+          width: 200px;
+          height: 100vh;
+          padding-top: 50px;
+          transition: right 0.5s;
+          z-index: 2;
         }
 
-        .header_text{
-            margin-top: 20%;
-            font-size: 1.8rem;
-
-            @include mobile{
-                margin-top: 100%;
-                font-size: 16px;
-                color: #ffffff;
-            }
-
-            h1{
-                margin-top: 20px;
-                font-size: 60px;
-
-                @include mobile{
-                    font-size: 30px;
-                }
-
-                span{
-                    color: #ff004f;
-                    @include mobile{
-                        color: #f8f9f8;
-                    }
-                }
-            }
-
-            p{
-                @include mobile{
-                    font-size: 16px;
-                    font-weight: 400;
-                }
-            }
+        .close-icon {
+          display: none;
+          @include mobile {
+            display: block;
+            font-size: 25px;
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            cursor: pointer;
+          }
         }
+
+        li {
+          list-style: none;
+          display: inline-block;
+          @include mobile {
+            display: block;
+            margin: 25px;
+          }
+
+          a {
+            text-decoration: none;
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: #212121;
+            position: relative;
+            @include mobile {
+              color: #fff;
+            }
+
+            &:after {
+              content: "";
+              width: 0%;
+              height: 3px;
+              background: #ff004f;
+              position: absolute;
+              left: 0;
+              bottom: -6px;
+              transition: 0.3s;
+            }
+
+            &:hover::after,
+            &:active::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .menu-icon {
+        display: none;
+        cursor: pointer;
+        @include mobile {
+          display: block;
+          font-size: 25px;
+        }
+      }
     }
+
+    .header_text {
+      margin-top: 20%;
+      font-size: 1.8rem;
+
+      @include mobile {
+        margin-top: 100%;
+        font-size: 16px;
+        color: #ffffff;
+      }
+
+      h1 {
+        margin-top: 20px;
+        font-size: 60px;
+
+        @include mobile {
+          font-size: 30px;
+        }
+
+        span {
+          color: #ff004f;
+          @include mobile {
+            color: #f8f9f8;
+          }
+        }
+      }
+
+      p {
+        @include mobile {
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
 }
-

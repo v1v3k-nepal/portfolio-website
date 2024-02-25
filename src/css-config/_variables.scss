@@ -1,0 +1,9 @@
+@import "./mixins.scss";
+
+:root {
+  --paddingX: 6%;
+  --cardBgColor: #e8eaf9;
+  @include xxl() {
+    --paddingX: 12%;
+  }
+}

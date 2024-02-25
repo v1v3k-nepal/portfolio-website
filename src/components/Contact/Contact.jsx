@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./Contact.scss";
 import Resume from "../../assets/Resume-Vivek-Nepal-Jan-13.pdf";
 import ReCAPTCHA from "react-google-recaptcha";
 
@@ -68,6 +67,7 @@ const Contact = () => {
                 <ReCAPTCHA
                   sitekey="6LdroOMnAAAAAEmBCRI95eRc7wadCoJlgbRaIYlz"
                   onChange={onChange}
+                  className="recaptcha"
                 />
               )}
               <button

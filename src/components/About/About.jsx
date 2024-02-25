@@ -1,5 +1,4 @@
 import React from "react";
-import "./About.scss";
 import AboutImg from "../../assets/about.png";
 import { useState } from "react";
 
@@ -35,7 +34,7 @@ const About = () => {
       <div className="container">
         <div className="row">
           <div className="about-col-1">
-            <img src={AboutImg} alt="" className="about-img" />
+            <img src={AboutImg} alt="" className="about-col-1-about-img" />
           </div>
           <div className="about-col-2">
             <h1 className="sub-title">About Me</h1>

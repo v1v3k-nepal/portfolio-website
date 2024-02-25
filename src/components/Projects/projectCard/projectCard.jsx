@@ -1,24 +1,40 @@
 import React from "react";
-import "./_projectCard.scss";
 import MarkdownPreview from "@uiw/react-markdown-preview";
 
 const ProjectCard = ({ data }) => {
   return (
-    <div className="work">
-      <img src={data?.bgImg} alt="" />
-      <div className="layer bg4">
-        <h2>{data?.title}</h2>
-        <MarkdownPreview
-          source={data?.desc}
-          style={{ background: "transparent", color: "white" }}
-        />
-        <div className="btn-container">
-          <a href={data?.liveUrl} className="live">
-            Live
-          </a>
-          <a href={data?.githubUrl} className="github">
-            GitHub
-          </a>
+    <div className="project-card">
+      <img
+        src={data?.bgImg}
+        alt="project"
+        className="project-card--project-image"
+      />
+      <div className="project-card-layer">
+        <div className="project-card-layer--top-content">
+          <MarkdownPreview
+            source={data?.desc}
+            style={{ background: "transparent", color: "white" }}
+          />
+        </div>
+        <div className="project-card-layer--bottom-content">
+          <h2 className="project-card-layer--bottom-content--project-title">
+            {data?.title}
+          </h2>
+          <div className="project-card-layer--bottom-content--tech-used-container">
+            {data?.techUsed?.map((item) => (
+              <span className="project-card-layer--bottom-content--tech-used-container--tech">
+                {item}
+              </span>
+            ))}
+          </div>
+          <div className="project-card-layer--bottom-content--btn-container">
+            <a href={data?.liveUrl} className="live">
+              Live
+            </a>
+            <a href={data?.githubUrl} className="github">
+              GitHub
+            </a>
+          </div>
         </div>
       </div>
     </div>

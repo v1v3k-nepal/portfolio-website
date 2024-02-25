@@ -1,18 +1,16 @@
-@import "../../css-config/mixins.scss";
-
 .footer {
   width: 100%;
   text-align: center;
   padding: 25px;
   font-weight: 300;
   margin-top: 20px;
-  // background-color: #e1d6e0;
   background: var(--cardBgColor);
-  @include mobile {
+}
+@media only screen and (max-width: 768px) {
+  .footer {
     font-size: 14px;
   }
-
-  i {
-    color: #ff004f;
-  }
 }
+.footer i {
+  color: #ff004f;
+}/*# sourceMappingURL=Footer.css.map */

@@ -1,8 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import "./css-config/variables";
+@import "./css-config/mixins.scss";
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+@import "./components/Header/Header.scss";
+@import "./components/About/About.scss";
+@import "./components/Services/Services.scss";
+@import "./components/Services/servicesCard/servicesCard";
+@import "./components/Projects/Projects.scss";
+@import "./components/Projects/projectCard/projectCard";
+@import "./components/Contact/Contact.scss";
+@import "./components/Footer/Footer.scss";
+@import "./components/learnMore/learnMore";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
